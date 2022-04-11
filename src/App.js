@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './style.css';
 
@@ -10,7 +10,7 @@ import UsersList from './pages/UsersList/UsersList';
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Topbar />
       <div className="container-app">
         <Sidebar />
@@ -20,6 +20,6 @@ export default function App() {
           <Route exact path="/users" element={<UsersList />} />
         </Routes>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
