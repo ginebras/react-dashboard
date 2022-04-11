@@ -10,17 +10,17 @@ export default function Topbar() {
         </div>
         <div className="topbar-right">
           <div className="topbar-notification">
-            <i class="bi bi-bell icon-top"></i>
+            <i className="bi bi-bell icon-top"></i>
             <span className="notification-number">2</span>
           </div>
 
           <div className="topbar-notification">
-            <i class="bi bi-globe icon-top"></i>
+            <i className="bi bi-globe icon-top"></i>
             <span className="notification-number">1</span>
           </div>
 
           <div className="topbar-notification">
-            <i class="bi bi-gear icon-top"></i>
+            <i className="bi bi-gear icon-top"></i>
           </div>
 
           <img
