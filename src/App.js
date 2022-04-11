@@ -19,7 +19,7 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/users" element={<UsersList />} />
-            <Route exact path={`/user/:id`} element={<UserPage />} />
+            <Route exact path={`/user-details/:id`} element={<UserPage />} />
           </Routes>
         </div>
       </div>

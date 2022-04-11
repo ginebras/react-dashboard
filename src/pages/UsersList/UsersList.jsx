@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,12 @@ import './UsersList.css';
 import { userRows } from '../../dummyData';
 
 export default function UsersList() {
+  const [data, setData] = useState(userRows);
+
+  const handleDelete = (e) => {
+    setData(data.filter((user) => user.id !== e));
+  };
+
   const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
     {
@@ -44,10 +50,13 @@ export default function UsersList() {
       renderCell: (params) => {
         return (
           <div className="actionsContainer">
-            <Link to={`/user/${params.row.id}`}>
+            <Link to={`/user-details/${params.row.id}`}>
               <button className="editBtn">Edit</button>
             </Link>
-            <i class="bi bi-trash-fill table-icon"></i>
+            <i
+              class="bi bi-trash-fill table-icon"
+              onClick={(e) => handleDelete(params.row.id)}
+            ></i>
           </div>
         );
       },
@@ -57,9 +66,9 @@ export default function UsersList() {
   return (
     <div className="users-list">
       <DataGrid
-        rows={userRows}
+        rows={data}
         columns={columns}
-        pageSize={5}
+        pageSize={8}
         rowsPerPageOptions={[5]}
         checkboxSelection
         disableSelectionOnClick
