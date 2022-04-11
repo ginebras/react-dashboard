@@ -7,6 +7,7 @@ import Topbar from './components/Topbar/Topbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './pages/Home/Home';
 import UsersList from './pages/UsersList/UsersList';
+import UserPage from './pages/UserPage/UserPage';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/users" element={<UsersList />} />
+            <Route exact path={`/user/:id`} element={<UserPage />} />
           </Routes>
         </div>
       </div>
