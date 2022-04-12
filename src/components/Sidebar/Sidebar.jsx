@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Sidebar.css';
 
 export default function Sidebar() {
@@ -9,8 +11,10 @@ export default function Sidebar() {
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list">
             <li className="sidebar-listItem">
-              <i className="bi bi-house-fill sidebar-icon"></i>
-              Home
+              <Link to="/" className="link">
+                <i className="bi bi-house-fill sidebar-icon"></i>
+                Home
+              </Link>
             </li>
             <li className="sidebar-listItem">
               <i className="bi bi-graph-up sidebar-icon"></i>
@@ -27,12 +31,16 @@ export default function Sidebar() {
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
             <li className="sidebar-listItem">
-              <i className="bi bi-person sidebar-icon"></i>
-              Users
+              <Link to="/users" className="link">
+                <i className="bi bi-person sidebar-icon"></i>
+                Users
+              </Link>
             </li>
             <li className="sidebar-listItem">
-              <i className="bi bi-shop-window sidebar-icon"></i>
-              Products
+              <Link to="/products" className="link">
+                <i className="bi bi-shop-window sidebar-icon"></i>
+                Products
+              </Link>
             </li>
             <li className="sidebar-listItem">
               <i className="bi bi-currency-dollar sidebar-icon"></i>
