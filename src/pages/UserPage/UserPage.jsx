@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './UserPage.css';
 
 export default function UserPage() {
@@ -6,7 +8,9 @@ export default function UserPage() {
     <div className="userPage">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <button className="createButton">Create</button>
+        <Link to="/newUser">
+          <button className="createButton">Create</button>
+        </Link>
       </div>
 
       <div className="userInfoContainer">

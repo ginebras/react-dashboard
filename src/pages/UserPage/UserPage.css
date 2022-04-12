@@ -90,6 +90,10 @@
   padding-bottom: 0;
 }
 
+.userTitle {
+  padding-left: 5px;
+}
+
 .updateUser {
   display: flex;
   margin-top: 15px;
