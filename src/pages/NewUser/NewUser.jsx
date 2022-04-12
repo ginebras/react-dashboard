@@ -82,13 +82,31 @@ export default function NewUser() {
         <div className="formGroup">
           <label className="labelInput">Gender</label>
           <div className="newGender">
-            <input className="inputRadio" type="radio" id="male" value="male" />
+            <input
+              className="inputRadio"
+              type="radio"
+              id="male"
+              value="male"
+              name="male"
+            />
             <label htmlFor="male">Male</label>
 
-            <input className="inputRadio" type="radio" id="female" value="female" />
+            <input
+              className="inputRadio"
+              type="radio"
+              id="female"
+              value="female"
+              name="female"
+            />
             <label htmlFor="female">Female</label>
 
-            <input className="inputRadio" type="radio" id="other" value="other" />
+            <input
+              className="inputRadio"
+              type="radio"
+              id="other"
+              name="other"
+              value="other"
+            />
             <label htmlFor="other">Other</label>
           </div>
         </div>
@@ -102,6 +120,10 @@ export default function NewUser() {
             <option>Yes</option>
             <option>No</option>
           </select>
+        </div>
+
+        <div className="formGroup">
+          <button className="newUserBtn">Create</button>
         </div>
       </form>
     </div>

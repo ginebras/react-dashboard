@@ -34,3 +34,13 @@ form {
 .inputRadio {
   margin-right: 5px;
 }
+
+.newUserBtn {
+  width: 40%;
+  padding: 5px 0;
+  color: white;
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
