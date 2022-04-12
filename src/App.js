@@ -10,6 +10,7 @@ import UsersList from './pages/UsersList/UsersList';
 import UserPage from './pages/UserPage/UserPage';
 import NewUser from './pages/NewUser/NewUser';
 import Products from './pages/Products/Products';
+import Product from './pages/Product/Product';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route exact path="/user-details/:id" element={<UserPage />} />
             <Route exact path="/newUser" element={<NewUser />} />
             <Route exact path="/products" element={<Products />} />
+            <Route exact path="/product-details/:id" element={<Product />} />
           </Routes>
         </div>
       </div>
