@@ -75,7 +75,7 @@ export default function Sidebar() {
               Analytics
             </li>
             <li className="sidebar-listItem">
-              <i class="bi bi-exclamation-circle-fill sidebar-icon"></i>
+              <i className="bi bi-exclamation-circle-fill sidebar-icon"></i>
               Reports
             </li>
           </ul>
