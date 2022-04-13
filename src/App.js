@@ -11,6 +11,7 @@ import UserPage from './pages/UserPage/UserPage';
 import NewUser from './pages/NewUser/NewUser';
 import Products from './pages/Products/Products';
 import Product from './pages/Product/Product';
+import NewProduct from './pages/NewProduct/NewProduct';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
             <Route exact path="/newUser" element={<NewUser />} />
             <Route exact path="/products" element={<Products />} />
             <Route exact path="/product-details/:id" element={<Product />} />
+            <Route exact path="/newProduct" element={<NewProduct />} />
           </Routes>
         </div>
       </div>
